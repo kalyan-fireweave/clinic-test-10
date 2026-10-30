@@ -1,0 +1,47 @@
+{
+  "defaultEnvironment": "production",
+  "orgId": "gpQK55x5QqWQMlDccy3MQgNGjtNaj3bK",
+  "projectId": "25490901-bd4c-4ed7-a8be-9b19f240ea6e",
+  "projectName": "clinic-test-10",
+  "rolloutReady": {
+    "attestUrl": "https://showcase-app-server.fireweave.ai"
+  },
+  "server": {
+    "url": "https://showcase-app-server.fireweave.ai"
+  },
+  "surfaces": [
+    {
+      "entrypoint": "apps/console/instrumentation-client.ts",
+      "harnessKind": "package",
+      "metricsClient": "none",
+      "path": "apps/console",
+      "rolloutCredentialEnv": "FIREWEAVE_BROWSER_KEY",
+      "startProfile": "client",
+      "surface": "web",
+      "surfaceId": "sfc_01M65DZ5KG2477Y1RKJ75SBE6C",
+      "trackerPath": ".fireweave/stamps.ts",
+      "sdk": {
+        "name": "@fireweaveai/web-sdk",
+        "version": "3.0.0",
+        "channel": "production"
+      }
+    },
+    {
+      "entrypoint": "apps/marketing/instrumentation-client.ts",
+      "harnessKind": "package",
+      "metricsClient": "none",
+      "path": "apps/marketing",
+      "rolloutCredentialEnv": "FIREWEAVE_BROWSER_KEY",
+      "startProfile": "client",
+      "surface": "web",
+      "surfaceId": "sfc_01M65DZ5KHKGQBK2FW2W5C3BSD",
+      "trackerPath": ".fireweave/stamps.ts",
+      "sdk": {
+        "name": "@fireweaveai/web-sdk",
+        "version": "3.0.0",
+        "channel": "production"
+      }
+    }
+  ],
+  "version": 2
+}
